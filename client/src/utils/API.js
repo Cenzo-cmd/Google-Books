@@ -9,6 +9,9 @@ const API = {
     },
     getFavorites: function() {
         return axios.get("/favorites");
+    },
+    deleteBook: function(id) {
+        return axios.delete("/api/books/" + id)
     }
     // https://www.googleapis.com/books/v1/volumes?q=harry
 };

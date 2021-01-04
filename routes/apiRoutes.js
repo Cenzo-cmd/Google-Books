@@ -6,7 +6,6 @@ module.exports = (app) => {
         // console.log(res);
         db.Book.create(req.body).then(result => {
             res.json(result);
-            console.log("book added successfully");
         }).catch(err => {
             console.log(err);
         })
@@ -15,7 +14,14 @@ module.exports = (app) => {
     app.get("/favorites", (req, res) => {
         db.Book.find().then(result => {
             res.json(result)
-            console.log(result);
+        }).catch(err => {
+            console.log(err);
+        });
+    });
+
+    app.delete("/api/books/:id", (req, res) => {
+        db.Book.findOneAndDelete({ "_id": req.params.id }).then(result => {
+            res.json(result);
         }).catch(err => {
             console.log(err);
         })
