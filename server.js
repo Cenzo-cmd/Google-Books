@@ -16,7 +16,7 @@ if(process.env.NODE_ENV === "production") {
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/vacationrental", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googleBooks", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

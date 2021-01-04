@@ -38,7 +38,7 @@ function Main() {
             <Column size="md-10">
             <div>
             <form>
-                <input className="form-control" placeHolder="Enter a book to search" onChange={handleBookChange}></input>
+                <input className="form-control" placeholder="Enter a book to search" onChange={handleBookChange}></input>
                 
                 <Button disabled={!(searchBoxText)} onClick={handleBookSearch}>Search</Button>
                 
