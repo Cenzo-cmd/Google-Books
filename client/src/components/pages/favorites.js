@@ -3,6 +3,8 @@ import Header from "../Header/header";
 import API from "../../utils/API";
 import Column from "../Column/Column";
 import FavoriteCard from "../FavoriteCard/FavoriteCard";
+import Button from "../Button/Button";
+import NavBar from "../Nav/nav";
 
 function Favorites() {
 
@@ -24,6 +26,7 @@ function Favorites() {
 
     return(
         <div>
+            <NavBar />
             <div>
                 <Header>
                     <h1>Favorites List</h1>
@@ -33,10 +36,13 @@ function Favorites() {
 
             <Column size="md-10">
                 {books.map(info => {
-                    console.log("###########", info);
                     return(
-                        <FavoriteCard book={info} key={info.id}/>
-                         )
+                        <div>
+                        <FavoriteCard book={info} key={info.id}>
+                        <Button className="btn btn-warning">Testing</Button>
+                        </FavoriteCard>
+                        
+                        </div>)
                 })}
             </Column>
         </div>

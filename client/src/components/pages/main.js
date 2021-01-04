@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import NavBar from "../Nav/mainNav";
 import Header from "../Header/header";
 import Button from "../Button/Button";
 import Column from "../Column/Column";
@@ -31,6 +31,7 @@ function Main() {
 
     return(
         <div>
+            <NavBar />
              <Header>
                 <h1>Google Book Search</h1>
                 <h5>Enter a book below to search!</h5>
@@ -40,7 +41,7 @@ function Main() {
             <form>
                 <input className="form-control" placeholder="Enter a book to search" onChange={handleBookChange}></input>
                 
-                <Button disabled={!(searchBoxText)} onClick={handleBookSearch}>Search</Button>
+                <Button disabled={!(searchBoxText)} className="btn btn-success" onClick={handleBookSearch}>Search</Button>
                 
             </form>
             </div>

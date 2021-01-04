@@ -8,7 +8,6 @@ function Card(props) {
     const bookInfo = props.book.volumeInfo;
 
     function addToFavorites(event) {
-        console.log("%%%%%%%%%%", props);
         API.saveBook({
             title: bookInfo.title,
             author: bookInfo.authors,

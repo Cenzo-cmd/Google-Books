@@ -13,20 +13,6 @@ function FavoriteCard(props) {
         })
     }
 
-    // function addToFavorites(event) {
-    //     console.log("%%%%%%%%%%", props);
-    //     API.saveBook({
-    //         title: bookInfo.title,
-    //         author: bookInfo.authors,
-    //         description: bookInfo.description,
-    //         image: bookInfo.imageLinks.thumbnail,
-    //         link: bookInfo.infoLink
-    //     }).then(() => {
-    //         console.log("success")
-    //     }).catch(err => {
-    //         console.log(err);
-    //     })
-    // }
     return(
         <div className="card mainCard">
         <div className="card-body card-cont" >
