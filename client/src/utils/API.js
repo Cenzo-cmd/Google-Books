@@ -8,7 +8,7 @@ const API = {
         return axios.post("/api/books", bookData);
     },
     getFavorites: function() {
-        return axios.get("/favorites");
+        return axios.get("/api/favorites");
     },
     deleteBook: function(id) {
         return axios.delete("/api/books/" + id)

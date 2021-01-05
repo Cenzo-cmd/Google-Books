@@ -11,7 +11,7 @@ module.exports = (app) => {
         })
     });
 
-    app.get("/favorites", (req, res) => {
+    app.get("/api/favorites", (req, res) => {
         db.Book.find().then(result => {
             res.json(result)
         }).catch(err => {
