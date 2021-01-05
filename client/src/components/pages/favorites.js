@@ -14,7 +14,6 @@ function Favorites() {
         getFavoriteBooks()
     }, []);
 
-    console.log("these are the books", books)
 
     function getFavoriteBooks() {
         API.getFavorites().then(result => {
