@@ -27,12 +27,10 @@ function Card(props) {
         <div className="card mainCard">
         <div className="card-body card-cont" >
             <h3>{`${bookInfo.title} - By: ${bookInfo.authors} `}</h3>
-            <img src={bookInfo.imageLinks.thumbnail} alt={bookInfo.title}></img>
+            <img src={bookInfo.imageLinks?.thumbnail} alt={bookInfo.title}></img>
             <p>{bookInfo.description}</p>
             <a href={bookInfo.infoLink} rel="noreferrer" target="_blank">Visit Website</a>
             <Button onClick={addToFavorites} disabled={clicked} className="btn btn-success" value={props.book.id}>Add To Favorites</Button>
-            {/* <p className="card-text">Cell: {props.book.cell}</p> */}
-            {/* <p className="card-text">{`Location: ${props.book.location.city}, ${props.book.location.state}`}</p> */}
 
         </div>
     </div>
