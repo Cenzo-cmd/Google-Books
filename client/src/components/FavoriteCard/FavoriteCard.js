@@ -10,6 +10,7 @@ function FavoriteCard(props) {
         const id = event.target.value;
         API.deleteBook(id).then(result => {
             console.log(result);
+            props.refresh();
         })
     }
 

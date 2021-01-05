@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./card.css";
 import Button from "../Button/Button";
 import API from "../../utils/API";
@@ -6,6 +6,8 @@ import API from "../../utils/API";
 function Card(props) {
     console.log("this is the props", props);
     const bookInfo = props.book.volumeInfo;
+
+    const [clicked, setClicked] = useState(false);
 
     function addToFavorites(event) {
         API.saveBook({
@@ -15,7 +17,8 @@ function Card(props) {
             image: bookInfo.imageLinks.thumbnail,
             link: bookInfo.infoLink
         }).then(() => {
-            console.log("success")
+            console.log("success");
+            setClicked(true);
         }).catch(err => {
             console.log(err);
         })
@@ -27,7 +30,7 @@ function Card(props) {
             <img src={bookInfo.imageLinks.thumbnail} alt={bookInfo.title}></img>
             <p>{bookInfo.description}</p>
             <a href={bookInfo.infoLink} rel="noreferrer" target="_blank">Visit Website</a>
-            <Button onClick={addToFavorites} className="btn btn-success" value={props.book.id}>Add To Favorites</Button>
+            <Button onClick={addToFavorites} disabled={clicked} className="btn btn-success" value={props.book.id}>Add To Favorites</Button>
             {/* <p className="card-text">Cell: {props.book.cell}</p> */}
             {/* <p className="card-text">{`Location: ${props.book.location.city}, ${props.book.location.state}`}</p> */}
 

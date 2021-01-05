@@ -41,7 +41,7 @@ function Main() {
             <form>
                 <input className="form-control" placeholder="Enter a book to search" onChange={handleBookChange}></input>
                 
-                <Button disabled={!(searchBoxText)} className="btn btn-success" onClick={handleBookSearch}>Search</Button>
+                <Button disabled={!(searchBoxText)} className="btn btn-success btn-disabled" onClick={handleBookSearch}>Search</Button>
                 
             </form>
             </div>

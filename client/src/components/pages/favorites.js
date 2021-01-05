@@ -3,7 +3,7 @@ import Header from "../Header/header";
 import API from "../../utils/API";
 import Column from "../Column/Column";
 import FavoriteCard from "../FavoriteCard/FavoriteCard";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 import NavBar from "../Nav/nav";
 
 function Favorites() {
@@ -38,8 +38,8 @@ function Favorites() {
                 {books.map(info => {
                     return(
                         <div>
-                        <FavoriteCard book={info} key={info.id}>
-                        <Button className="btn btn-warning">Testing</Button>
+                        <FavoriteCard refresh={getFavoriteBooks} book={info} key={info.id}>
+                        {/* <Button className="btn btn-warning">Testing</Button> */}
                         </FavoriteCard>
                         
                         </div>)
