@@ -13,14 +13,15 @@ app.use(express.json());
 if(process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 
-    app.get("/*", (request, response) => {
-        response.sendFile(path.join(__dirname, "../client/build/index.html"))
-    });
-} else {
-    app.get("/*", (request, response) => {
-        response.sendFile(path.join(__dirname, "../client/public/index.html"))
-    });
-}
+    // app.get("/*", (request, response) => {
+    //     response.sendFile(path.join(__dirname, "../client/build/index.html"))
+    // });
+} 
+// else {
+//     app.get("/*", (request, response) => {
+//         response.sendFile(path.join(__dirname, "../client/public/index.html"))
+//     });
+// }
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
