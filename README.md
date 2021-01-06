@@ -9,4 +9,55 @@ On the Navbar on the top, there is a link to access the favorites page.  When th
 
 Techhnologies used: HTML, CSS, React, Javascript, Node.js, Mongo Database, Express, Bootstrap
 
-Created by: Vincent Doria Jr.
+## Technologies
+
+<p>
+    <!-- HTML5 -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" width="32" alt="HTML5" />
+        &nbsp;
+    <!-- CSS3 -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" width="32" alt="CSS3" />
+        &nbsp;
+    <!-- JavaScript -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="32" alt="JavaScript" />
+        &nbsp;
+    <!-- NodeJS -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" width="32" alt="NodeJS" />
+        &nbsp;
+    <!-- Express -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg" width="32" alt="Express" />
+        &nbsp;
+    <!-- React -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="32" alt="React" />
+        &nbsp;
+    <!-- Bootstrap -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg" width="32" alt="Bootstrap" />
+        &nbsp;
+    <!-- MongoDB -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg" width="32" alt="MongoDB" />
+        &nbsp;
+    <!-- Git -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" width="32" alt="Git" />
+        &nbsp;
+    <!-- GitHub -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" width="32" alt="GitHub" />
+        &nbsp;
+    <!-- VisualStudio -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" width="32" alt="VisualStudio" />
+        &nbsp;
+    <!-- npm -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg" width="32" alt="npm" />
+        &nbsp;
+    <!-- Heroku -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/heroku/heroku-original.svg" width="32" alt="Heroku" />
+        &nbsp;
+    <!-- Webpack -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/webpack/webpack-original.svg" width="32" alt="Webpack" />
+        &nbsp;
+    <!-- Travis -->
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/travis/travis-plain.svg" width="32" alt="Travis" />
+        &nbsp;
+ 
+</p>
+
+## Created by: Vincent Doria Jr.
