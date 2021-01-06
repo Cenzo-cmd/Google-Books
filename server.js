@@ -4,6 +4,7 @@ const routes = require("./routes/htmlRoutes");
 const logger = require("morgan");
 const app = express();
 const PORT = process.env.PORT || 8081;
+const path = require("path");
 
 app.use(logger("dev"))
 app.use(express.urlencoded({ extended: true }));
