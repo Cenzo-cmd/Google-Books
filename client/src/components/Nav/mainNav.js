@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return(
@@ -10,7 +11,7 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarmenu">
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                    <a href="/favorites" className="nav-link">Favorites</a>
+                    <Link to="/favorites" className="nav-link">Favorites</Link>
                 </li>
             </ul>
         </div>
