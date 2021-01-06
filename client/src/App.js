@@ -1,8 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// import  from "react-router";
 import './App.css';
 import Main from "./components/pages/main"
 import Favorites from "./components/pages/favorites";
+
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
         <Route exact path ={["/", "/main"]} >
           <Main />
         </Route>
-        <Route path = "/favorites">
+        <Route exact path = "/favorites">
           <Favorites />
         </Route>
       </Switch>
