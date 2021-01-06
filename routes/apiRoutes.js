@@ -3,7 +3,7 @@ const db = require("../models");
 module.exports = (app) => {
 
     app.post("/api/books", (req, res) => {
-        // console.log(res);
+
         db.Book.create(req.body).then(result => {
             res.json(result);
         }).catch(err => {

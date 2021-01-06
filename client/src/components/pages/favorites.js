@@ -11,17 +11,30 @@ function Favorites() {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
-        getFavoriteBooks()
+       getBooks();
     }, []);
 
-
-    function getFavoriteBooks() {
+    function getBooks() {
         API.getFavorites().then(result => {
             setBooks(result.data);
         }).catch(err => {
             console.log(err);
         })
     }
+
+    function deleteBook(event) {
+        const id = event.target.value;
+        API.deleteBook(id).then(result => {
+            console.log(result);
+            getBooks();
+        })
+    }
+
+    console.log("these are the books", books)
+
+    // function getFavoriteBooks() {
+        // refresh={getFavoriteBooks} 
+    // }
 
     return(
         <div>
@@ -37,7 +50,7 @@ function Favorites() {
                 {books.map(info => {
                     return(
                         <div>
-                        <FavoriteCard refresh={getFavoriteBooks} book={info} key={info.id}>
+                        <FavoriteCard deleteBook={deleteBook} book={info} key={info.id}>
                         {/* <Button className="btn btn-warning">Testing</Button> */}
                         </FavoriteCard>
                         

@@ -4,7 +4,6 @@ import Button from "../Button/Button";
 import API from "../../utils/API";
 
 function Card(props) {
-    console.log("this is the props", props);
     const bookInfo = props.book.volumeInfo;
 
     const [clicked, setClicked] = useState(false);
